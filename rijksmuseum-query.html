@@ -1,0 +1,20 @@
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="rijksmuseum-query" attributes="query">
+
+	<template>
+		
+		<core-ajax url="https://www.rijksmuseum.nl/api/nl/collection?q={{query}}&ps=30&key=ssCRX6qW&format=json" auto response="{{response}}"></core-ajax>
+
+	</template>
+
+	<script>
+    Polymer('rijksmuseum-query', {
+	    responseChanged: function(oldValue) {
+	    	this.object = JSON.parse(this.response);
+	      console.log(this.object);
+	    }
+    });
+	</script>
+
+</polymer-element>

@@ -1,0 +1,11 @@
+{
+  "name": "polymer_thing",
+  "version": "0.0.0",
+  "authors": [
+    "SmokeyTheSalmon <Roelvanbakkum@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.2"
+  }
+}
